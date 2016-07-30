@@ -7,7 +7,9 @@
         <element id="directory" name="classes">
           <element id="module-output" name="jsfproject" />
         </element>
-        <element id="directory" name="lib" />
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="Mojarra-2.2.1" />
+        </element>
       </element>
     </root>
   </artifact>
