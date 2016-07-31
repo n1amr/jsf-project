@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <faces-config version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
 		http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
 	<application>
 		<message-bundle>resources.application</message-bundle>
+		<resource-bundle>
+			<base-name>com.n1amr.learn.jsf.numberquiz.messages</base-name>
+			<var>numberquizMessages</var>
+		</resource-bundle>
 		<locale-config>
 			<default-locale>en</default-locale>
+			<supported-locale>de</supported-locale>
 		</locale-config>
+
+		<!--Java Quiz-->
+		<resource-bundle>
+			<base-name>com.n1amr.learn.jsf.javaquiz.messages</base-name>
+			<var>javaQuizMessages</var>
+		</resource-bundle>
 	</application>
+
+	<navigation-rule>
+		<from-view-id>/login2/index.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>success</from-outcome>
+			<to-view-id>/login2/welcome.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
 </faces-config>

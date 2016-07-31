@@ -5,7 +5,6 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.model.SelectItem;
 import javax.persistence.Entity;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
