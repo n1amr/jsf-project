@@ -14,8 +14,16 @@
 	<h3>
 		<h:outputText value="#{msgs.welcomeHeading}"/>
 	</h3>
+	<h3>
+		<h:outputText value="This is a #{formBean.message}"/>
+	</h3>
 	<p>
 		<h:outputText value="#{msgs.welcomeMessage}"/>
 	</p>
+	<h:form>
+		<h:selectManyListbox>
+			<f:selectItems value="#{formBean.items}"/>
+		</h:selectManyListbox>
+	</h:form>
 </h:body>
 </html>
