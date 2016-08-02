@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xml:lang="en" lang="en"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<head>
+</head>
+
+<body>
+<ui:composition template="/planets/templates/master_layout.xhtml">
+	<ui:define name="windowTitle">
+		#{msgs.loginTitle}
+	</ui:define>
+
+	<ui:define name="heading">
+		<ui:include src="/planets/sections/login/header.xhtml"/>
+	</ui:define>
+
+	<ui:define name="sidebarLeft">
+		<ui:include src="/planets/sections/login/sidebar_left.xhtml"/>
+	</ui:define>
+
+	<ui:define name="content">
+		<h:form>
+			<h:panelGrid columns="2">
+				#{planetsMessages.namePrompt}
+				<h:inputText id="name" value="#{user.name}"/>
+				#{planetsMessages.passwordPrompt}
+				<h:inputSecret id="password" value="#{user.password}"/>
+			</h:panelGrid>
+			<p>
+				<h:commandButton value="#{planetsMessages.loginButtonText}"
+				                 action="index"/>
+			</p>
+		</h:form>
+	</ui:define>
+</ui:composition>
+</body>
+</html>

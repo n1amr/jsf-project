@@ -2,7 +2,6 @@ package com.n1amr.learn.jsf.javaquiz;
 
 import com.n1amr.learn.jsf.javaquiz.beans.Problem;
 
-
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import java.io.Serializable;

@@ -19,6 +19,12 @@
 			<base-name>com.n1amr.learn.jsf.javaquiz.messages</base-name>
 			<var>javaQuizMessages</var>
 		</resource-bundle>
+
+		<!-- Planets -->
+		<resource-bundle>
+			<base-name>com.n1amr.learn.jsf.planets.messages</base-name>
+			<var>planetsMessages</var>
+		</resource-bundle>
 	</application>
 
 	<navigation-rule>
